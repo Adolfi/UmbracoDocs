@@ -43,10 +43,10 @@ With the package.json file in place, our service will take that to mean: "look, 
 So the addition here is the line that says `SCM_SCRIPT_GENERATOR_ARGS = --basic`.   
 Rest assured: this problem is on our list to fix as soon as possible but for now you can use this workaround.
 
-####Some or all of my static assets (css, js, images) are not loading on my development environemt
+####Some or all of my static assets (css, js, images) are not loading on my development enviroment
 Symptom: When you try to go to the URL of your static assets (`https://mysite.s1.umbraco.io/assets/css/app.css` for example) you get a login prompt, upon completing that, you get redirected to something like `https://mysite.s1.umbraco.io/login.aspx?ReturnUrl=%2fassets%2fcss%2fapp.css`.
 
-This issue is under investigation and seems to occur rather randomdly; it works fine for most people but for some it just starts failing for no good reason (that we've found yet). For now what you can do to fix the problem is:
+This issue is under investigation and seems to occur rather randomly; it works fine for most people but for some it just starts failing for no good reason (that we've found yet). For now what you can do to fix the problem is:
 
 1. Copy the Url from your site’s HTTPS Clone Url in the portal 
 2. Using the Url without the actual repository name, the GUID part, open a new browser tab and login. Just the Url like `https://dev-mysite.scm.s1.umbraco.io/`
@@ -140,4 +140,4 @@ When you're in Kudu, you can go up to your `site` folder as described in the 5 s
 
 - `log.xml` shows you the same output you will have seen when pushing your changes using git, it will show you what happened during the push and if any errors occurred. This file is especially useful when trying to find errors for deploys using the portal (so from dev > live or from dev > staging > live). Even though the last line may end with "Deployment successful" it is possible that there were errors or suspicious messages before that so make sure to give them a read.
 
-It is possible that a deployment failed so that it is not the active deployment at the moment, there could be valueable information in the logs of this deployment. You can find out what the last attempted deploy was by going to your Kudu url and adding `/api/deployments` to the url (so for example: `https://stage-mysite.scm.s1.umbraco.io/api/deployments`. This will give you some JSON data and the first entry in here is the newest attempted deploy, again the id corresponds to a folder name which has the log.xml file in it.
+It is possible that a deployment failed so that it is not the active deployment at the moment, there could be valuable information in the logs of this deployment. You can find out what the last attempted deploy was by going to your Kudu url and adding `/api/deployments` to the url (so for example: `https://stage-mysite.scm.s1.umbraco.io/api/deployments`. This will give you some JSON data and the first entry in here is the newest attempted deploy, again the id corresponds to a folder name which has the log.xml file in it.
