@@ -22,7 +22,7 @@ To deploy content you have created locally you'll use the same approach as above
 ##I’m ready to get started, what do I do first?
 
 ###Working directly in Umbraco as a Service
-When working with your Umbraco as a Service site directly, having logged in to the umbraco back office, any changes you make will automatically be identified and comitted to the site's Git repository. This includes umbraco specific items like document types and templates. In the Umbraco as a Service portal activity view there will be messages in the activity stream as well as an indication of how many commits have been made.
+When working with your Umbraco as a Service site directly, having logged in to the umbraco back office, any changes you make will automatically be identified and committed to the site's Git repository. This includes umbraco specific items like document types and templates. In the Umbraco as a Service portal activity view there will be messages in the activity stream as well as an indication of how many commits have been made.
 
 As you add or edit content and media in your site you'll notice these are not added to the site's Git repository. We leave it to you to decide which content to deploy and when.  
 
