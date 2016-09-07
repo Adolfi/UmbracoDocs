@@ -21,7 +21,7 @@ Then, whenever you deploy from local to development, the transforms in `web.deve
 **Note:** if you only want to transform the file on the live environment then you don't create the `development.xdt.config`.
 
 ##All config files
-For each deploy, we'll search for all of the `.{environment}.xdt.config` files in your site and apply tranforms, so you can also transform (for example) `~/config/Dashboard.config` by creating a `~/config/Dashboard.live.xdt.config` file. Just make sure the transform file follows the naming convention and it exists in the same folder as the config file you want to transform.   
+For each deploy, we'll search for all of the `.{environment}.xdt.config` files in your site and apply transforms, so you can also transform (for example) `~/config/Dashboard.config` by creating a `~/config/Dashboard.live.xdt.config` file. Just make sure the transform file follows the naming convention and it exists in the same folder as the config file you want to transform.   
 
 ##Useful links
 - [Config transform syntax](https://msdn.microsoft.com/en-us/library/dd465326)
